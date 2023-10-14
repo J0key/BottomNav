@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/main">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <RelativeLayout
+            android:id="@+id/nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/woman2" />
+
+            <TextView
+                android:id="@+id/gn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/avatar"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Good Night"
+                android:textColor="#CED7DE"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gn"
+                android:layout_toRightOf="@id/avatar"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Shyra Ath"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_settings_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_searching"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/nav"
+            android:background="@drawable/fill"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_search_24"
+                android:alpha="4"
+                />
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/search_btn"
+                android:hint="Cari film disini..."
+                android:textSize="14sp"
+                android:textColorHint="#CED7DE"
+                android:background="@drawable/fill"
+                android:alpha="2"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_filter_list_24"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/romance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_searching"
+            android:text="Romance"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <ScrollView
+            android:id="@+id/film_row1"
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:layout_below="@id/romance">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                >
+
+                <ImageView
+                    android:id="@+id/shigatsu"
+                    android:layout_height="200dp"
+                    android:layout_width="180dp"
+                    android:src="@drawable/shigatsu"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    />
+
+                <TextView
+                    android:id="@+id/shigatsu_txt"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shigatsu"
+                    android:layout_below="@id/shigatsu"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/horimiya"
+                    android:layout_toRightOf="@id/shigatsu"
+                    android:layout_height="200dp"
+                    android:layout_width="180dp"
+                    android:src="@drawable/horimiya"/>
+
+                <TextView
+                    android:id="@+id/horimiya_txt"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Horimiya"
+                    android:layout_toRightOf="@id/shigatsu"
+                    android:layout_below="@id/horimiya"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:layout_below="@id/shigatsu_txt"
+                    android:id="@+id/koe"
+                    android:layout_height="200dp"
+                    android:layout_width="180dp"
+                    android:src="@drawable/kodenokatachi"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Koe no Katachi"
+                    android:layout_below="@id/koe"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/horimiya_txt"
+                    android:id="@+id/seiren"
+                    android:layout_toRightOf="@id/koe"
+                    android:layout_height="200dp"
+                    android:layout_width="180dp"
+                    android:src="@drawable/seiren"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Seiren"
+                    android:layout_toRightOf="@id/koe"
+                    android:layout_below="@id/koe"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

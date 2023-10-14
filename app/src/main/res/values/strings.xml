@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">UTS</string>
+    <string name="shigatsu">Shigatsu wa kimi no Uso</string>
+    <string name="text">This anime tells the story of a reliable young pianist named Kousei Arima.
+        However, since her mother\'s death,she is no longer interested in playing the piano,
+        and even seems to stay away from her Kousei Arima just lived an ordinary life as a high school student.</string>
+
+    <array name="cinema">
+        <item></item>
+        <item>JWALK MALL CGV</item>
+        <item>PAKUWON MALL CGV</item>
+        <item>JOGJA CITY MALL XXI</item>
+        <item>EMPIRE XXI</item>
+        <item>AMBARUKMO XXI</item>
+    </array>
+
+    <array name="amount">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+
+    </array>
+    <array name="seat">
+        <item></item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </array>
+    <array name="payment">
+        <item></item>
+        <item>MOBILE BANKING</item>
+        <item>CASH</item>
+        <item>QRIS</item>
+    </array>
+
+    <array name="mobile">
+        <item></item>
+        <item>BNI</item>
+        <item>BCA</item>
+        <item>BRI</item>
+        <item>MANDIRI</item>
+        <item>CIMB NIAGA</item>
+    </array>
+</resources>
